@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Athan Clock</title>
 </head>
 <body>
-    <input type="text" placeholder="City" id="city">
-    <input type="text" placeholder="Country" id="cnt">
-    <button onclick="activate()">Submit</button>
-    <div id="body"></div>
+    <audio id="athan-fajr">
+        <source src="/audio files/Fajr Athan.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="athan">
+        <source src="audio files/athan.mp3" type="audio/mpeg">
+    </audio>
+
+    <center>
+        <div id="body"></div>
+    </center>
 </body>
 <Script src="script.js"></Script>
 </html>
