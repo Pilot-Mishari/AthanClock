@@ -16,7 +16,7 @@ console.log(year, month, day, time, salahfajr, salahghair);
 
 getLocation();
 
-fetch('https://api.aladhan.com/v1/timingsByCity/${day}-${month}-${year}?city=Riyadh&country=Saudi+Arabia&method=4')
+fetch('http://api.aladhan.com/v1/calendar/2019?latitude=${lat}&longitude=${long}&method=2')
  .then(response => {return response.json()})
  .then (data  => {
      console.log(data);
